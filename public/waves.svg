@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="428" height="517.395" viewBox="0 0 428 517.395">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_22" data-name="Rectángulo 22" width="428" height="517.395" rx="4.159" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.565" y1="1.154" x2="0.463" y2="-0.079" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ae80f5"/>
+      <stop offset="0.445" stop-color="#7c60d7"/>
+      <stop offset="1" stop-color="#423cb5"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-5.72" y1="1.154" x2="-5.822" y2="-0.079" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#bb90ff"/>
+      <stop offset="0.147" stop-color="#b48bfa"/>
+      <stop offset="0.445" stop-color="#7c60d7"/>
+      <stop offset="1" stop-color="#423cb5"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.63" y1="0.594" x2="0.463" y2="-0.079" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#c2a3f1"/>
+      <stop offset="0.589" stop-color="#8e67e1"/>
+      <stop offset="1" stop-color="#6153d3"/>
+    </linearGradient>
+  </defs>
+  <g id="Grupo_6" data-name="Grupo 6" clip-path="url(#clip-path)">
+    <g id="Grupo_58" data-name="Grupo 58">
+      <path id="Trazado_5" data-name="Trazado 5" d="M814.276,281.854s77.974,76.385,162.555,76.385,129.514-28.757,196.915-28.757,99.119,45.832,157.268,45.832V9.56H814.276Z" transform="translate(-852.853 -25.773)" opacity="0.2" fill="url(#linear-gradient)"/>
+      <path id="Trazado_6" data-name="Trazado 6" d="M1334.2,262.946s-77.974,76.385-162.555,76.385-129.514-28.757-196.915-28.757-99.118,45.832-157.268,45.832V-9.348H1334.2Z" transform="translate(-850.086 -30.905)" opacity="0.5" fill="url(#linear-gradient-2)"/>
+      <path id="Trazado_7" data-name="Trazado 7" d="M810.565,250.4s77.974,76.387,162.555,76.387,129.514-28.757,196.915-28.757,99.118,45.832,157.268,45.832V-21.895H810.565Z" transform="translate(-856.081 -34.309)" fill="url(#linear-gradient-3)"/>
+    </g>
+  </g>
+</svg>
