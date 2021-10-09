@@ -25,3 +25,15 @@ export default function Home() {
     </React.Fragment>
   )
 }
+
+
+export async function getStaticProps(){
+
+
+  return {
+    props: {
+
+    },
+    revalidate:10
+  }
+}
