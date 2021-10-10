@@ -3,7 +3,7 @@ import React from 'react'
 const ContainerService = ({children}) => {
     return (
         <section>
-            <ul>
+            <ul className="block lg:flex lg:max-w-4xl mx-auto ">
                 {children}
             </ul>
         </section>

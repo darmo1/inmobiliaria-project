@@ -6,7 +6,7 @@ import {ProductsFeature} from '../Utils/ProductsFeature'
 const FeatureServices = () => {
     return (
         <section className="w-full px-2">
-            <h1 className="w-4/5 text-center text-2xl font-bold text-gray-500 mx-auto">Lo hacemos posible:</h1>
+            <h1 className="w-4/5 text-center text-3xl font-bold text-gray-500 mx-auto mt-8">Lo hacemos posible:</h1>
             <ContainerService>
                 {ProductsFeature.map( ({id, img, featureName, extract}) => {
                     return (

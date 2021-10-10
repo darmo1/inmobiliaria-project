@@ -6,21 +6,11 @@ import {ProductsList} from '../Utils/ProductsList'
 
 const Products = () => {
     return (
-        <section className="w-full -mt-12 px-2">
+        <section className="w-full -mt-12 px-2 my-16">
 
-            <div >
-                <div className="flex justify-center">
-                    <Image 
-                    src={"/propiedad-horizontal.svg"} 
-                    alt="servicio-propiedad-horizontal"
-                    width="250"
-                    height="250"
-                   
-                    />
-                </div>
-            </div>
+         
 
-            <h1 className="w-4/5 text-center text-2xl font-bold text-gray-500 mx-auto ">Te ofrecemos los mejores servicios en:</h1>
+            <h1 className="w-4/5 text-center text-2xl lg:text-4xl font-bold text-gray-500 mx-auto my-12">Te ofrecemos los mejores servicios en:</h1>
 
         <ContainerService>
         {

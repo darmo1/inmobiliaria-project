@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import CardPosts from "../../components/CardPosts";
 
+
 export default function Blog({ response }) {
   console.log(response, "response data post");
 
