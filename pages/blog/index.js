@@ -12,7 +12,7 @@ export default function Blog({ response }) {
   return (
     <main  className="max-w-5xl mx-auto">
       
-      <div className="flex md:flex-wrap m-4">
+      <div className=" flex md:flex-nowrap  flex-wrap m-4">
       {response.map(( post, index )=> {
           return (
             <Link href={"/blog/" + post.slug.current} key={index} passHref>

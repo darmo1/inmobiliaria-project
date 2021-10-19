@@ -45,7 +45,7 @@ export default function Post(){
 
 
   return (
-    <main className="-mt-56">
+    <main className="px-8 sm:-mt-56 ">
       {
         currentPost ?
         (<React.Fragment>
