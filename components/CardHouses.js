@@ -25,12 +25,12 @@ const CardHouses = ({card}) => {
 
     return (
         
-            <div className="bg-white p-4 rounded-lg mr-4 min-h-full">
+            <div className="bg-white p-4 rounded-lg mx-4 min-h-full">
              <div>
                  <img
                  src={ `${urlFor(card.image)}` } 
                  alt="houses" 
-                 className="rounded-lg h-48 w-full mx-auto"
+                 className="rounded-lg md:h-48  mx-auto h-22"
                  
                  
                  />

@@ -24,3 +24,10 @@ a {
 .bg-gradient{
   background: transparent linear-gradient(117deg, #D8CFFC 0%, #AE7BFF 35%, #74B7F2 100%) 0% 0% no-repeat padding-box;
 }
+
+
+@media(max-width: 500px){
+  li:after{
+    content: none !important;
+  }
+}

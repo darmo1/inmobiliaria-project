@@ -5,14 +5,15 @@ import Link from 'next/link'
 
 
 const CardPosts = ({ post }) => {
-  console.log(post, "POST 🙂 🙂 ");
+
   return (
-    <article className="sm:w-1/2 md:w-1/3 ">
-      <div className="border-2 border-gray-200 border-opacity-60 rounded-lg w-full">
+    <React.Fragment>
+    <article className="mr-2 w-full md:w-auto">
+      <div className="border border-gray-200 border-opacity-60 rounded-lg ">
         <img
           src={urlFor(post.mainImage.asset.url)}
           alt="hey"
-          className="md:h-36 w-full object-cover object-center"
+          className="    md:h-36 w-full object-cover object-center rounded-t-lg"
         />
         <div className="p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in">
           <h2 className="text-sm font-light text-indigo-300 mb-1">
@@ -26,9 +27,9 @@ const CardPosts = ({ post }) => {
             <img
               src={urlFor(post.authorImage).url()}
               alt={post.name}
-              className="rounded-full md:w-1/4 md:mr-4"
+              className="rounded-full w-16 md:w-1/4 md:mr-4"
             />
-            <p className="text-center ">{post.name}</p>
+            <p className="mt-6 md:text-center ">{post.name}</p>
           </div>
 
           <div className="flex justify-center md:flex md:items-center md:flex-wrap">
@@ -45,6 +46,12 @@ const CardPosts = ({ post }) => {
         </div>
       </div>
     </article>
+    <style jsx>{`
+    /* .height-article{
+      height: 500px;
+    } */
+    `}</style>
+    </React.Fragment>
   );
 };
 

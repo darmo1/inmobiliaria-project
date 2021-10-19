@@ -3,11 +3,13 @@ import * as React from 'react'
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import CardHouses from './CardHouses'
-
+import useWindowSize from '../Hooks/useWindowSize'
 
 const HousesSection = ({data}) => {
 
-    const displayCount = 3
+    const { width } = useWindowSize()
+
+    const displayCount = width >= 640 ? 3 : 1
     const [currentIndex, setSlide] = React.useState(0)
     return (
         

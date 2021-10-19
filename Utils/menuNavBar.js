@@ -1,17 +1,17 @@
-const classStyle  = `text-white`
+const classStyle  = ``
 export const menuNavBar = [
     {
         id:1,
         itemName: 'Servicios',
         itemClassName: classStyle ,
-        url:"#servicios"
+        url:"/servicios"
     },
    
     {
         id:2,
         itemName: 'Propiedades',
         itemClassName: classStyle ,
-        url:"#propiedades"
+        url:"/propiedades"
     },
    
     {

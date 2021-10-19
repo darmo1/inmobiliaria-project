@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <React.Fragment>
       <footer className="bg">
-        <div className="w-9/12 h-full flex justify-between mx-auto">
+        <div className="w-9/12 h-full flex  flex-wrap md:flex-nowrap items-center justify-between mx-auto ">
           <Link href="/">
             <a>
               <div className="text-white font-semibold">@inmobiliariadonquijote</div>

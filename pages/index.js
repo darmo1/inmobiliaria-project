@@ -7,8 +7,12 @@ import Products from "../components/Products";
 import { sanityClient } from "../lib/sanity";
 import styles from "../styles/Home.module.css";
 import Banner from "../components/Banner";
+import Equipo from "../components/Equipo";
+import Blog from "../components/Blog";
 
-export default function Home({data}) {
+export default function Home({data, dataEquipo, posts}) {
+
+  console.log (dataEquipo )
   return (
     <React.Fragment>
       <Head>
@@ -21,12 +25,14 @@ export default function Home({data}) {
       </Head>
 
 
-      <Banner />
+      {/* <Banner /> */}
       <Products />
       <HousesSection data = {data}/>
       <FeatureServices />
+      <Equipo dataEquipo={dataEquipo} />
+      <Blog posts={posts} />
 
-
+ 
 
 
 
@@ -53,11 +59,40 @@ const queryHouses = `*[_type == 'houses']{
 }
 `;
 
+
+const queryEquipo = `*[_type == 'equipo']{
+  name,
+  _id,
+  'image': image.asset->url,
+  descripcion,
+  order
+  
+}`
+
+const queryBlogData = `*[_type == "post"] | order(publishedAt desc){
+  title,
+  slug,
+  mainImage{
+      asset->{
+          _id,
+          url
+      },
+      alt
+  },
+  summary,
+  publishedAt,
+  'name': author->name,
+  'authorImage': author->image
+}[0...3]`;
+
 export async function getStaticProps() {
 
   const data =  await sanityClient.fetch(queryHouses)
+  const dataEquipo = await sanityClient.fetch(queryEquipo)
+  const dataBlog = await sanityClient.fetch(queryBlogData)
+  console.log(data)
   return {
-    props: { data },
+    props: { data , dataEquipo, posts: dataBlog },
     revalidate: 10,
   };
 }
