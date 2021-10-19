@@ -72,7 +72,7 @@ const Header = () => {
           </div>
         </div>
       ) : (
-        <div className="bg-balls">
+        <div className="bg-balls" style={ pathname === '/' ? { minHeight:'700px'} : {}}>
           <header className="max-w-4xl mx-auto text-white text-right p-6">
             <Link href="/nosotros">
               <a>Quienes somos</a>
@@ -91,7 +91,7 @@ const Header = () => {
                   return (
                     <Link href={item.url} key={item.id}>
                       <a>
-                        <li className={`${item.itemClassName} text-black`}>
+                        <li className={`${item.itemClassName} text-white`}>
                           {item.itemName}
                         </li>
                       </a>
@@ -118,7 +118,7 @@ const Header = () => {
 
         .bg-balls {
           background-image: url("/balls.svg");
-          min-height: 700px;
+         
           repeat: no-repeat;
           background-size: cover;
           background-position: top;

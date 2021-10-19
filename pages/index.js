@@ -12,7 +12,7 @@ import Blog from "../components/Blog";
 
 export default function Home({data, dataEquipo, posts}) {
 
-  console.log (dataEquipo )
+
   return (
     <React.Fragment>
       <Head>
@@ -90,7 +90,7 @@ export async function getStaticProps() {
   const data =  await sanityClient.fetch(queryHouses)
   const dataEquipo = await sanityClient.fetch(queryEquipo)
   const dataBlog = await sanityClient.fetch(queryBlogData)
-  console.log(data)
+
   return {
     props: { data , dataEquipo, posts: dataBlog },
     revalidate: 10,
