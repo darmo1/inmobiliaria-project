@@ -2,7 +2,7 @@ export const ProductsFeature = [
     { 
         id:1,
         featureName: 'Disponibilidad garantizada',
-        extract: 'Encuentra la mayor oferta de vivienda en tu ciudad gracias a nuestra plataforma',
+        extract: 'Administración responsable y garantizada de su propiedad horizontal',
         img: '/disponibilidad.svg'
     },
     { 
@@ -13,7 +13,7 @@ export const ProductsFeature = [
     },
     { 
         id:3,
-        featureName: 'Aistencia',
+        featureName: 'Asistencia',
         extract: 'Loren Ipsum',
         img: '/asistencia.svg'
     },

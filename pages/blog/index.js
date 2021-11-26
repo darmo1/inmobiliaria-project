@@ -3,6 +3,7 @@ import { sanityClient } from "../../lib/sanity";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import CardPosts from "../../components/CardPosts";
+import { BannerPromo } from "../../components/BanerPromo";
 
 
 export default function Blog({ response }) {
@@ -10,8 +11,9 @@ export default function Blog({ response }) {
   const [search, setSearch] = React.useState("");
 
   return (
-    <main  className="max-w-5xl mx-auto">
-      
+    <>
+  
+    <main  className="max-w-4xl mx-auto">
       <div className=" flex md:flex-nowrap  flex-wrap m-4">
       {response.map(( post, index )=> {
           return (
@@ -26,6 +28,7 @@ export default function Blog({ response }) {
  
       </div>
     </main>
+    </>
   );
 }
 

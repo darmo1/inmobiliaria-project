@@ -9,6 +9,7 @@ import styles from "../styles/Home.module.css";
 import Banner from "../components/Banner";
 import Equipo from "../components/Equipo";
 import Blog from "../components/Blog";
+import { BannerPromo } from "../components/BanerPromo";
 
 export default function Home({data, dataEquipo, posts}) {
 
@@ -26,8 +27,11 @@ export default function Home({data, dataEquipo, posts}) {
 
 
       {/* <Banner /> */}
+      <BannerPromo />
+      <br />
       <Products />
       <HousesSection data = {data}/>
+      <BannerPromo image='/banner2.jpg'  background="bg-bannerColor2"  />
       <FeatureServices />
       <Equipo dataEquipo={dataEquipo} />
       <Blog posts={posts} />

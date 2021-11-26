@@ -6,12 +6,25 @@ import Banner from "./Banner";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import Title from "./Title";
+import { BannerPromo } from "./BanerPromo";
 
 const Header = () => {
   const { pathname } = useRouter();
   const { width } = useWindowSize();
 
   const [showMenu, setShowMenu] = React.useState(false);
+
+  const arrayImage = [
+    '/banner1.jpg',
+    '/banner2.jpg',
+    '/build.jpg',
+  ]
+
+  function imageRandom(min,max){
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
 
   const OpenMenu = () => {
     setShowMenu(!showMenu);
@@ -86,7 +99,7 @@ const Header = () => {
                 </a>
               </Link>
 
-              <ul className="md:flex md:w-3/4 md:justify-evenly items-center">
+              <ul className="md:flex md:w-3/5 md:justify-evenly items-center">
                 {menuNavBar.map((item) => {
                   return (
                     <Link href={item.url} key={item.id}>
@@ -101,7 +114,7 @@ const Header = () => {
               </ul>
             </nav>
           </div>
-          {pathname === "/" ? <Banner /> : <Title pathname={pathname} />}
+          {pathname === "/" ? <Banner /> : <>  <Title pathname={pathname} /> <BannerPromo image={arrayImage[imageRandom(0, arrayImage.length-1)]} />   </>}
         </div>
       )}
       <style jsx>{`
