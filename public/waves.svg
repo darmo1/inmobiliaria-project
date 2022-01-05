@@ -4,20 +4,20 @@
       <rect id="Rectángulo_22" data-name="Rectángulo 22" width="428" height="517.395" rx="4.159" fill="none"/>
     </clipPath>
     <linearGradient id="linear-gradient" x1="0.565" y1="1.154" x2="0.463" y2="-0.079" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#ae80f5"/>
-      <stop offset="0.445" stop-color="#7c60d7"/>
-      <stop offset="1" stop-color="#423cb5"/>
+      <stop offset="0" stop-color="#5E0817"/>
+      <stop offset="0.445" stop-color="#5E0817"/>
+      <stop offset="1" stop-color="#5E0817"/>
     </linearGradient>
     <linearGradient id="linear-gradient-2" x1="-5.72" y1="1.154" x2="-5.822" y2="-0.079" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#bb90ff"/>
-      <stop offset="0.147" stop-color="#b48bfa"/>
-      <stop offset="0.445" stop-color="#7c60d7"/>
-      <stop offset="1" stop-color="#423cb5"/>
+      <stop offset="0" stop-color="#5E0817"/>
+      <stop offset="0.147" stop-color="#5E0817"/>
+      <stop offset="0.445" stop-color="#5E0817"/>
+      <stop offset="1" stop-color="#5E0817"/>
     </linearGradient>
     <linearGradient id="linear-gradient-3" x1="0.63" y1="0.594" x2="0.463" y2="-0.079" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#c2a3f1"/>
-      <stop offset="0.589" stop-color="#8e67e1"/>
-      <stop offset="1" stop-color="#6153d3"/>
+      <stop offset="0" stop-color="#5E0817"/>
+      <stop offset="0.589" stop-color="#5E0817"/>
+      <stop offset="1" stop-color="#9f6b74"/>
     </linearGradient>
   </defs>
   <g id="Grupo_6" data-name="Grupo 6" clip-path="url(#clip-path)">

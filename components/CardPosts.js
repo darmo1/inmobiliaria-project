@@ -15,7 +15,7 @@ const CardPosts = ({ post }) => {
           alt="hey"
           className="    md:h-36 w-full object-cover object-center rounded-t-lg"
         />
-        <div className="p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in">
+        <div className="p-6 hover:bg-customRedLight hover:text-white transition duration-300 ease-in">
           <h2 className="text-sm font-light text-indigo-300 mb-1">
             {" "}
             {new Date(post.publishedAt).toLocaleDateString()}{" "}

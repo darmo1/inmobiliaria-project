@@ -39,7 +39,7 @@ const Header = () => {
       {width <= 640 ? (
         <div className="bg-waves  ">
           <div onClick={OpenMenu} className="relative pt-8 block">
-            <div className=" bg-purpleLight rounded-r-lg flex justify-center items-center w-1/6">
+            <div className=" bg-purpleLight rounded-r-lg flex justify-center items-center w-1/6 ">
             <Image
               src="/menuIcon.svg"
               alt="Icono-mobile"
@@ -91,11 +91,14 @@ const Header = () => {
               <a>Quienes somos</a>
             </Link>
           </header>
-          <div className="bg-purple">
+          <div className="bg-customRed">
             <nav className="max-w-5xl mx-auto flex md:justify-between  ">
               <Link href={"/"}>
                 <a>
-                  <Image src="/logo.svg" alt="logo" width="100" height="100" />
+                  <div className="ml-8">
+                  <Image src="/logo.svg" alt="logo" width="100" height="100" className="" />
+
+                  </div>
                 </a>
               </Link>
 
@@ -114,7 +117,13 @@ const Header = () => {
               </ul>
             </nav>
           </div>
-          {pathname === "/" ? <Banner /> : <>  <Title pathname={pathname} /> <BannerPromo image={arrayImage[imageRandom(0, arrayImage.length-1)]} />   </>}
+          {pathname === "/" && <Banner /> 
+          
+          // <>  
+          // <Title pathname={pathname} /> 
+          //  <BannerPromo image={arrayImage[imageRandom(0, arrayImage.length-1)]} />    
+          // </>
+          }
         </div>
       )}
       <style jsx>{`
@@ -146,6 +155,8 @@ const Header = () => {
         .lst::after {
           content: none;
         }
+
+        
       `}</style>
     </React.Fragment>
   );

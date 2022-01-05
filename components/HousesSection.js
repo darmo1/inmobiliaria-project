@@ -13,7 +13,7 @@ const HousesSection = ({data}) => {
     const [currentIndex, setSlide] = React.useState(0)
     return (
         
-    <div className="w-full bg-gradient">
+    <div className="w-full bg-customRed">
 
 
 <div className=" max-w-4xl mx-auto overflow-hidden py-8">

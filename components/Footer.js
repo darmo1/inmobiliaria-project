@@ -4,8 +4,8 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <React.Fragment>
-      <footer className="bg">
-        <div className="w-9/12 h-full flex  flex-wrap md:flex-nowrap items-center justify-between mx-auto ">
+      <footer className="bg bg-customRed">
+        <div className="w-9/12 h-full flex  flex-wrap  md:flex-nowrap items-center justify-between mx-auto ">
           <Link href="/">
             <a>
               <div className="text-white font-semibold">@inmobiliariadonquijote</div>
@@ -17,7 +17,7 @@ const Footer = () => {
       </footer>
       <style jsx>{`
         .bg {
-          background-image: linear-gradient(to right, #ae80f5, #6153d3);
+          background: #5e0817;
           height: 100px;
         }
       `}</style>

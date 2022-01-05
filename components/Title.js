@@ -4,7 +4,7 @@ import React from "react";
 const Title = (props) => {
  
 
-  const title = function (pathname) {
+  const title = function (pathname, name = undefined) {
     switch (pathname) {
       case "/servicios":
         return "Servicios";
@@ -19,13 +19,13 @@ const Title = (props) => {
         return "Nosotros";
 
       default:
-        return "";
+        return `${name || ''}`;
     }
   };
 
   return (
     <div className="max-w-4xl flex my-16 mx-auto mb-28 justify-center items-center">
-      <p className="text-5xl "> {title(props.pathname)} </p>
+      <p className="text-5xl "> {title(props.pathname, props.name)} </p>
     </div>
   );
 };

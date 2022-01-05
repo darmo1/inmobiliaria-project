@@ -2,6 +2,7 @@ import * as React from "react";
 import { useRouter } from "next/router";
 import { sanityClient, urlFor } from "../../lib/sanity";
 import BlockContent from "@sanity/block-content-to-react"
+import LayoutSecundary from "../../Layout/LayoutSecundary";
 
 export default function Post(){
 
@@ -45,6 +46,7 @@ export default function Post(){
 
 
   return (
+    <LayoutSecundary showBanner={true}>
     <main className="px-8 sm:-mt-56 ">
       {
         currentPost ?
@@ -82,6 +84,7 @@ export default function Post(){
           background-repeat: no-repeat;
           background-size: cover;
           height: 550px;
+         
         }
 
 
@@ -100,6 +103,7 @@ export default function Post(){
         }
       `}</style>
     </main>
+    </LayoutSecundary>
   );
 };
 
