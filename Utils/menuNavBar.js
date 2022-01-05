@@ -1,6 +1,12 @@
 const classStyle  = ``
 export const menuNavBar = [
     {
+        id:0,
+        itemName: 'Home',
+        itemClassName: classStyle ,
+        url:"/"
+    },
+    {
         id:1,
         itemName: 'Servicios',
         itemClassName: classStyle ,
