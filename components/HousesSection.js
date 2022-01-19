@@ -17,8 +17,8 @@ const HousesSection = ({data}) => {
 
 
 <div className=" max-w-4xl mx-auto overflow-hidden py-8">
-        <h1 className="text-4xl text-center text-white font-semibold"> Lanzamientos exclusivos  </h1>
-        <h2 className="text-xl text-center text-white">Con nuestros lanzamientos exclusivos tendrás la propiedad de tus sueños</h2>
+        <h1 className="text-4xl text-center text-white font-semibold px-4 md:px-2"> Lanzamientos exclusivos  </h1>
+        <h2 className="text-xl text-center text-white  px-4 md:px-2">Con nuestros lanzamientos exclusivos tendrás la propiedad de tus sueños</h2>
          
          <Carousel
          dynamicHeight={false}  

@@ -10,9 +10,9 @@ const Banner = () => {
           <p className="my-0">la <span className="font-bold">administración</span> de </p> 
           <p className="my-0"> tu propiedad</p>
         
-        <Link href="#">
-        <a className="mt-16">
-            <div type="button" className="bg-purple inline-block px-6  py-2 text-base text-white rounded-lg">
+        <Link href="https://api.whatsapp.com/send?phone=573007064360">
+        <a className="mt-16" target="_blank">
+            <div type="button" className="bg-customRed inline-block px-6  py-2 text-base text-white rounded-lg">
                 Conoce más
             </div>
         </a>

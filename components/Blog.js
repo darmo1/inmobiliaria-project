@@ -11,7 +11,7 @@ const Blog = ({ posts }) => {
          {posts.map((post, index) => {
             return (
               <Link href={"/blog/" + post.slug.current} key={index} passHref>
-                <a className="">
+                <a className="px-4 md:px-2">
                   <CardPosts post={post} />
                 </a>
               </Link>

@@ -16,8 +16,8 @@ export const ProductsList = [
     {
         id:3,
         serviceName: 'Ventas de muebles e inmuebles',
-        extract: '',
-        img : '/'
+        extract: 'Administramos y te ayudamos a vender muebles e inmuebles',
+        img : '/inmueble.svg'
     },
    
 ]

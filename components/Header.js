@@ -40,6 +40,8 @@ const Header = () => {
         <div className="bg-waves  ">
           <div onClick={OpenMenu} className="relative pt-8 block">
             <div className=" bg-purpleLight rounded-r-lg flex justify-center items-center w-1/6 ">
+            <Link href="/">
+            <a>
             <Image
               src="/menuIcon.svg"
               alt="Icono-mobile"
@@ -47,6 +49,8 @@ const Header = () => {
               height="35"
             className=" "
             />
+            </a>
+            </Link>
             </div>
 
             <div
@@ -74,14 +78,15 @@ const Header = () => {
             </div>
           </div>
           <div className="flex justify-center">
-            <a>
+           <Link href="/">
+           <a>
               <Image
                 src="/logo.svg"
                 alt="logo"
                 width="150"
                 height="150"
               />
-            </a>
+            </a></Link>
           </div>
         </div>
       ) : (

@@ -12,7 +12,8 @@ module.exports = {
         customRedLight: '#9f6b74'
       },
       gridTemplateColumns: {
-        'banner': '70% 30%'
+        'banner': '70% 30%',
+        'services': 'repeat(3, 1fr)',
       }
     },
   },

@@ -19,7 +19,7 @@ const LayoutSecundary = (props) => {
     
     const { pathname } = useRouter();
     return (
-        <div className='w-full'>
+        <div className='max-w-4xl mx-auto'>
             <Title pathname={pathname}  name={ props?.name || undefined }/> 
             {props.children}
             { props?.showBanner 
