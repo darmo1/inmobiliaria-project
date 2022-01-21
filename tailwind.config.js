@@ -14,6 +14,10 @@ module.exports = {
       gridTemplateColumns: {
         'banner': '70% 30%',
         'services': 'repeat(3, 1fr)',
+        'presentationalCol': '1fr 1fr'
+      },
+      gridTemplateRows: {
+        'presentationalRow': '1fr 1fr'
       }
     },
   },

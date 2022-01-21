@@ -12,19 +12,27 @@ export const menuNavBar = [
         itemClassName: classStyle ,
         url:"/servicios"
     },
-   
+
     {
         id:2,
+        itemName: 'Nosotros',
+        itemClassName: `${classStyle} lst` ,
+        url:"/nosotros"
+    },
+   
+    {
+        id:3,
         itemName: 'Propiedades',
         itemClassName: classStyle ,
         url:"/propiedades"
     },
    
     {
-        id:3,
+        id:4,
         itemName: 'Blog',
         itemClassName: `${classStyle} lst` ,
         url:"/blog"
     },
+    
    
 ]

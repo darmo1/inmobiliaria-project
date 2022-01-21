@@ -16,14 +16,15 @@ const LayoutSecundary = (props) => {
         max = Math.floor(max);
         return Math.floor(Math.random() * (max - min + 1)) + min;
       }
-    
+
     const { pathname } = useRouter();
     return (
         <div className='max-w-4xl mx-auto'>
             <Title pathname={pathname}  name={ props?.name || undefined }/> 
             {props.children}
+             {/*  <BannerPromo image={arrayImage[imageRandom(0, arrayImage.length-1)]} />  */}
             { props?.showBanner 
-                ? <BannerPromo image={arrayImage[imageRandom(0, arrayImage.length-1)]} /> 
+                ? null 
                 : null
             }
         </div>

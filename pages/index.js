@@ -10,6 +10,7 @@ import Banner from "../components/Banner";
 import Equipo from "../components/Equipo";
 import Blog from "../components/Blog";
 import { BannerPromo } from "../components/BanerPromo";
+import Grid from "../components/Grid";
 
 export default function Home({data, dataEquipo, posts}) {
 
@@ -27,13 +28,17 @@ export default function Home({data, dataEquipo, posts}) {
 
 
       {/* <Banner /> */}
-      <BannerPromo />
+      {/* <BannerPromo /> */}
       <br />
-      <Products />
-      <HousesSection data = {data}/>
-      <BannerPromo image='/banner2.jpg'  background="bg-bannerColor2"  />
-      <FeatureServices />
+      <Products>
+      <Grid />
+
+      </Products>
+     
+      {/* <HousesSection data = {data}/> */}
+      {/* <BannerPromo image='/banner2.jpg'  background="bg-bannerColor2"  /> */}
       <Equipo dataEquipo={dataEquipo} />
+      <FeatureServices />
       <Blog posts={posts} />
 
  

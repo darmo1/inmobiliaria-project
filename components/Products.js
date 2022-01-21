@@ -1,17 +1,16 @@
-import React from 'react'
-import Image from 'next/image';
-import ContainerService from '../components/ContainerService'
-import {ProductsList} from '../Utils/ProductsList'
+import React from "react";
+import Image from "next/image";
+import ContainerService from "../components/ContainerService";
+import { ProductsList } from "../Utils/ProductsList";
 
-
-const Products = () => {
-    return (
-        <section className="w-full -mt-12 px-2 my-16">
-
-         
-
-            <h1 className="w-4/5 text-center text-2xl lg:text-4xl font-bold text-gray-500 mx-auto my-12">Te ofrecemos los mejores servicios en:</h1>
-
+const Products = ({ children }) => {
+  return (
+    <section className="w-full -mt-12 px-2 my-16">
+      <h1 className="w-4/5 text-center text-2xl lg:text-4xl font-bold text-gray-500 mx-auto my-12">
+        Te ofrecemos los mejores servicios en:
+      </h1>
+      {children}
+      {/* 
         <ContainerService>
         {
           ProductsList.map( product => {
@@ -33,16 +32,9 @@ const Products = () => {
             )
           })
         }
-      </ContainerService>
+      </ContainerService> */}
+    </section>
+  );
+};
 
-
-
-
-        </section>
-            
-            
-    
-    )
-}
-
-export default Products
+export default Products;
