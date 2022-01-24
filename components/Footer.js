@@ -12,6 +12,13 @@ const Footer = () => {
               <div className="text-white font-semibold ml-2">@inmobiliariadonquijote</div>
             </a>
           </Link>
+         <div className="flex my-4 md:my-2">
+         <img src="https://img.icons8.com/dotty/80/000000/phone.png" className="w-12 bg-white rounded-2xl"/>
+        <div className="text-white ml-4">
+        <div> tel:  604 322 21 31  </div>
+         <div>cel: 300 7064360</div>
+        </div>
+         </div>
           <div className="text-white font-semibold">Medellin - Colombia</div>
 
         </div>
