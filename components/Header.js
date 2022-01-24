@@ -77,15 +77,15 @@ const Header = () => {
               </ul>
             </div>
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center ">
            <Link href="/">
            <a>
               <Image
-                src="/logo.svg"
+                src="/LogoInmobiliaria.svg"
                 alt="logo"
                 width="150"
                 height="150"
-                className=" rounded-2xl"
+                className="bg-white rounded-2xl"
               />
             </a></Link>
           </div>
@@ -101,8 +101,8 @@ const Header = () => {
             <nav className="max-w-5xl mx-auto flex md:justify-between  ">
               <Link href={"/"}>
                 <a>
-                  <div className="ml-8  px-4">
-                  <Image src="/logo.svg" alt="logo" width="90" height="90" className="" />
+                  <div className="ml-8 bg-white px-4">
+                  <Image src="/LogoInmobiliaria.svg" alt="logo" width="90" height="90" className="" />
 
                   </div>
                 </a>
