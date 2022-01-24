@@ -17,6 +17,13 @@ function Admin(){
                 </button>
                </a>
                </Link>
+               <Link href="https://inmobiliariadonquijote.sanity.studio/" >
+               <a target="_blank">
+               <button className='border px-6 py-2 bg-cyan-400 my-6 rounded-2xl text-2xl text-white font-semibold'>
+                    Panel de control e informacion
+                </button>
+               </a>
+               </Link>
                 <img src="/Discovery.gif" alt="gif" />
                 </div>
             </LayoutSecundary>
