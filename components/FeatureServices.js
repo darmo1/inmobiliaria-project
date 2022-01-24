@@ -15,11 +15,12 @@ const FeatureServices = () => {
                                 <Image 
                                 src={img} 
                                 alt="service-feature" 
-                                width="200" 
-                                height="200" 
+                                width="150" 
+                                height="150" 
+                                className='rounded-full'
                                 />
                             </div>
-                            <h2 className="text-center font-semibold">{featureName}</h2>
+                            <h2 className="text-center font-semibold mt-4">{featureName}</h2>
                             <p className="text-center font-normal">{extract}</p>
                         </li>
                     )

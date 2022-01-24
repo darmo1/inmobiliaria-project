@@ -10,7 +10,7 @@ const Products = ({ children }) => {
         Te ofrecemos los mejores servicios en:
       </h1>
       {children}
-      {/* 
+      
         <ContainerService>
         {
           ProductsList.map( product => {
@@ -22,17 +22,19 @@ const Products = ({ children }) => {
                   <Image 
                   src={product.img} 
                   alt="product-list" 
-                  width="200" 
-                  height="200" />
+                  width="150" 
+                  height="150" 
+                  className="rounded-full"
+                  />
                   </div>
                   
-                  <h2 className="text-center font-semibold">{product.serviceName}</h2>
+                  <h2 className="text-center font-semibold mt-4">{product.serviceName}</h2>
                   <p className="text-center font-normal">{product.extract}</p>
               </li>
             )
           })
         }
-      </ContainerService> */}
+      </ContainerService>
     </section>
   );
 };

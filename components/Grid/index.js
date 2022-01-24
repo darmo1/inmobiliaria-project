@@ -5,7 +5,7 @@ import Link from "next/link";
 const Grid = () => {
   return (
     <div className="max-w-4xl mx-auto md:grid md:grid-col-presentationalCol md:grid-row-presentationalRow gap-2 flex flex-col md:h-96 my-4">
-      <div className="row-start-1 row-end-3 col-start-1 col-end-2 border relative rounded-2xl">
+      <div className="row-start-1 row-end-3 col-start-1 col-end-2  relative rounded-2xl">
         <Link href="/servicios">
           <a>
             <>
@@ -27,7 +27,7 @@ const Grid = () => {
         </Link>
       </div>
 
-      <div className="row-start-1 row-end-2 col-start-2 col-end-3 border relative">
+      <div className="row-start-1 row-end-2 col-start-2 col-end-3  relative">
         <Link href="/servicios">
           <a>
             <>
@@ -46,7 +46,7 @@ const Grid = () => {
           </a>
         </Link>
       </div>
-      <div className="row-start-2 row-end-3 col-start-2 col-end-3 border relative rounded-2xl">
+      <div className="row-start-2 row-end-3 col-start-2 col-end-3  relative rounded-2xl">
         <Link href="/servicios">
           <a>
             <>

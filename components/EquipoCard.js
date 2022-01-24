@@ -4,7 +4,7 @@ import { PortableText, urlFor } from "../lib/sanity";
 const EquipoCard = (props) => {
     return (
         <React.Fragment>
-        <div className='w-1/2 sm:w-1/4 mx-auto border p-4 rounded-2xl border-gray-400  shadow'>
+        <div className='w-1/2 sm:w-1/4 mx-auto  p-4 rounded-2xl border  shadow'>
             <img src={urlFor(props.image).url()} alt={props.name} className='md:rounded-full rounded-lg mb-6 md:w-36 mx-auto'/>
            <div className=''>
            <h2 className='text-base sm:text-xl text-white mb-4 font-bold text-center'>{props.name}</h2>

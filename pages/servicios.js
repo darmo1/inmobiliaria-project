@@ -13,9 +13,11 @@ function Servicios() {
               los propietarios y residentes
             </h2>
             <main className=" flex flex-wrap   mx-auto md:flex-col md:flex-nowrap">
-              <div className="my-8 md:my-2 ">
-                <div className="border px-4 rounded-2xl flex py-4 ">
-                  <div className="w-2/3 h-96  relative">
+
+              <div className="my-8 mx-2 md:my-2  ">
+
+                <div className="border  rounded-2xl flex flex-wrap py-4 w-screen md:w-full">
+                  <div className="w-full md:w-1/2 h-96  ml-6 relative">
                   <Image
                     alt="service"
                     src="/build.jpg"
@@ -24,7 +26,8 @@ function Servicios() {
                    className="rounded-2xl"
                   />
                   </div>
-                 <div className=" ml-6 w-2/3">
+
+                 <div className=" pl-6 md:w-2/4">
                  <h1 className="text-2xl my-4">Administración Integral de Propiedad Horizontal</h1>
                   <p className="text-justify">
                     Es el servicio de gestión administrativa de óptima calidad,
@@ -33,12 +36,13 @@ function Servicios() {
                     infraestructura asociados a cada propiedad horizontal.
                   </p>
                  </div>
+
                 </div>
               </div>
-              <div className="my-8 md:my-2">
-                <div className="border px-4 rounded-2xl flex py-4">
+              <div className="my-8 mx-2 md:my-2 ">
+                <div className="border px-4 rounded-2xl flex flex-wrap py-4 md:w-full w-screen">
                  
-               <div className=" ml-6 w-2/3">
+               <div className=" pr-6 w-full  md:w-1/2 ">
                <h1 className="text-2xl my-4">Asesoría y Consultoría</h1>
                   <p className="text-justify">
                     <ul>
@@ -60,7 +64,7 @@ function Servicios() {
                     </ul>
                   </p>
                </div>
-               <div  className="w-2/3 h-96 ml-6 relative">
+               <div  className="w-full md:w-1/2 h-96 relative ">
                <Image
                     alt="service"
                     src="/admin.jpg"
@@ -71,9 +75,12 @@ function Servicios() {
                </div>
                 </div>
               </div>
-              <div className="my-8 md:my-2  ">
-                <div className="border px-4 rounded-2xl flex py-4" >
-                  <div className="w-1/2 h-96  mr-6 relative" >
+
+              <div className="my-8 mx-2 md:my-2  ">
+                <div className="border px-4 rounded-2xl  flex flex-wrap py-4 w-screen md:w-full" >
+                  
+                  
+                  <div className="w-full md:w-1/2 h-96  mr-6 relative" >
                   <Image
                     alt="service"
                     src="/law.jpg"
@@ -82,7 +89,8 @@ function Servicios() {
                     className="rounded-2xl"
                   />
                   </div>
-                 <div className="">
+
+                 <div className="w-full md:w-1/3">
                  <h1 className="text-2xl my-4">Servicios jurídicos</h1>
                   <p className="text-justify">Asesorías y procesos legales</p>
                  </div>

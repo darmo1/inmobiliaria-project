@@ -39,7 +39,7 @@ const Header = () => {
       {width <= 640 ? (
         <div className="bg-waves  ">
           <div onClick={OpenMenu} className="relative pt-8 block">
-            <div className=" bg-purpleLight rounded-r-lg flex justify-center items-center w-1/6 ">
+            <div className=" bg-customRedLight rounded-r-lg flex justify-center items-center w-1/6 ">
             <Link href="/">
             <a>
             <Image
@@ -47,7 +47,7 @@ const Header = () => {
               alt="Icono-mobile"
               width="50"
               height="35"
-            className=" "
+            className=""
             />
             </a>
             </Link>
@@ -81,10 +81,11 @@ const Header = () => {
            <Link href="/">
            <a>
               <Image
-                src="/logo.svg"
+                src="/Logo.png"
                 alt="logo"
                 width="150"
                 height="150"
+                className="bg-white rounded-2xl"
               />
             </a></Link>
           </div>
@@ -100,8 +101,8 @@ const Header = () => {
             <nav className="max-w-5xl mx-auto flex md:justify-between  ">
               <Link href={"/"}>
                 <a>
-                  <div className="ml-8">
-                  <Image src="/logo.svg" alt="logo" width="100" height="100" className="" />
+                  <div className="ml-8 bg-white px-4">
+                  <Image src="/Logo.png" alt="logo" width="90" height="90" className="" />
 
                   </div>
                 </a>
@@ -144,7 +145,7 @@ const Header = () => {
         }
 
         .bg-balls {
-          background-image: url("/balls.svg");
+          background-image: url("/headers.svg");
          
           repeat: no-repeat;
           background-size: cover;

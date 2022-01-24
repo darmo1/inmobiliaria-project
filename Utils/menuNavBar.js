@@ -16,23 +16,24 @@ export const menuNavBar = [
     {
         id:2,
         itemName: 'Nosotros',
-        itemClassName: `${classStyle} lst` ,
+        itemClassName: `${classStyle} ` ,
         url:"/nosotros"
+    },
+    {
+        id:4,
+        itemName: 'Blog',
+        itemClassName: `${classStyle} ` ,
+        url:"/blog"
     },
    
     {
         id:3,
         itemName: 'Propiedades',
-        itemClassName: classStyle ,
+        itemClassName: `${classStyle} lst` ,
         url:"/propiedades"
     },
    
-    {
-        id:4,
-        itemName: 'Blog',
-        itemClassName: `${classStyle} lst` ,
-        url:"/blog"
-    },
+    
     
    
 ]
