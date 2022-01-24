@@ -6,7 +6,7 @@ const Equipo = ({ dataEquipo }) => {
   return (
     <section className="bg-customRed py-12">
         <h1 className="text-lg font-bold sm:text-5xl text-center text-white"> Conoce el equipo de trabajo </h1>
-    <div className="max-w-5xl mx-auto  my-12 flex flex-wrap">
+    <div className="max-w-5xl mx-auto  my-12 flex flex-wrap justify-center">
       {dataEquipo
         .sort((a, b) => a.order - b.order)
         .map((item) => {
