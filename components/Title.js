@@ -18,6 +18,9 @@ const Title = (props) => {
         case "/nosotros":
         return "Nosotros";
 
+        case "/contacto":
+        return "Contacto";
+
       default:
         return `${name || ''}`;
     }

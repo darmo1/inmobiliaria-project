@@ -1,4 +1,4 @@
-const classStyle  = ``
+const classStyle  = `md:pl-4`
 export const menuNavBar = [
     {
         id:0,
@@ -29,8 +29,14 @@ export const menuNavBar = [
     {
         id:3,
         itemName: 'Propiedades',
-        itemClassName: `${classStyle} lst` ,
+        itemClassName: `${classStyle}` ,
         url:"/propiedades"
+    },
+    {
+        id:5,
+        itemName: 'Contactenos',
+        itemClassName: `${classStyle} lst` ,
+        url:"/contacto"
     },
    
     
