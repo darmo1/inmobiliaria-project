@@ -30,7 +30,7 @@ export const Info = [
     {
         id:5,
         name:'Dirección',
-        value: 'Cra 49 # 53 - 141, local 231',
+        value: 'Cra 49 # 52 - 141, local 231',
         image:'/location.svg',
         cName:''
     }
