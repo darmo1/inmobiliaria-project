@@ -2,7 +2,7 @@ export const Info = [
     {
         id:1,
         name:'Correo',
-        value: 'inmobiliaria@algo',
+        value: 'inmobiliariadonquijote10@gmail.com',
         image:'/email.svg',
         cName:''
     },
