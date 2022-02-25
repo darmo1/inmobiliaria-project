@@ -79,36 +79,50 @@ const Header = () => {
           </div>
           <div className="flex justify-center ">
            <Link href="/">
-           <a>
-              <Image
-                src="/LogoInmobiliaria.svg"
+             <div className="bg-white rounded-2xl p-4 flex flex-col items-center">
+             <a>
+             <div className="flex justify-center mb-1">
+             <Image
+                src="/LogoInmobiliariaDonQuijote.png"
                 alt="logo"
-                width="150"
-                height="150"
-                className="bg-white rounded-2xl"
+                width="70"
+                height="70"
+                className=""
               />
-            </a></Link>
+             </div>
+              <div className="flex flex-col items-center">
+                    <p className="font-bold text-lg">Inmobiliaria</p>
+                    <p className="font-bold text-lg">Don Quijote</p>
+                  </div>
+            </a>
+
+             </div>
+           </Link>
           </div>
         </div>
       ) : (
         <div className="bg-balls" style={ pathname === '/' ? { minHeight:'700px'} : {}}>
           <header className="max-w-4xl mx-auto text-white text-right p-6">
-            <Link href="/nosotros">
+            {/* <Link href="/nosotros">
               <a>Quienes somos</a>
-            </Link>
+            </Link> */}
           </header>
-          <div className="bg-customRed">
-            <nav className="max-w-5xl mx-auto flex md:justify-between  ">
+          <div className="">
+            <nav className="max-w-5xl mx-auto flex md:justify-between bg-customRed pr-8   rounded-2xl">
               <Link href={"/"}>
                 <a>
-                  <div className="ml-8 bg-white px-4">
-                  <Image src="/LogoInmobiliaria.svg" alt="logo" width="90" height="90" className="" />
+                  <div className=" bg-white pr-4 pl-2 flex items-center rounded-l-xl">
+                  <Image src="/LogoInmobiliariaDonQuijote.png" alt="logo" width="90" height="90" className="" />
+                  <div className="flex flex-col items-center">
+                    <p className="font-bold text-lg">Inmobiliaria</p>
+                    <p className="font-bold text-lg">Don Quijote</p>
+                  </div>
 
                   </div>
                 </a>
               </Link>
 
-              <ul className="md:flex md:w-3/5 md:justify-evenly items-center">
+              <ul className="md:flex  md:justify-evenly items-center">
                 {menuNavBar.map((item) => {
                   return (
                     <Link href={item.url} key={item.id}>
@@ -155,7 +169,7 @@ const Header = () => {
 
         li:after {
           content: "|";
-          margin-left: 2rem;
+          margin-left: 1rem;
         }
 
         .lst::after {

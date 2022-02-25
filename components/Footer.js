@@ -41,7 +41,7 @@ const Footer = () => {
           <div className="text-white">
             <div>
               <h3>Dirección</h3>
-              <address>Cra 49 # 53 - 141, local 231</address>
+              <address>Cra 49 # 52 - 141, local 231</address>
             </div>
 
             <div className="text-white font-semibold">Medellin - Colombia</div>

@@ -1,4 +1,4 @@
-const classStyle  = `md:pl-4`
+const classStyle  = `md:pl-3`
 export const menuNavBar = [
     {
         id:0,
