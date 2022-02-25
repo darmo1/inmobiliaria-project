@@ -170,6 +170,7 @@ const Header = () => {
         li:after {
           content: "|";
           margin-left: 1.5rem;
+          padding: 0 1rem;
         }
 
         .lst::after {
