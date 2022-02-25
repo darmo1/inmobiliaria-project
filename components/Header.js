@@ -169,8 +169,8 @@ const Header = () => {
 
         li:after {
           content: "|";
-          margin-left: 1.5rem;
-          padding: 0 1rem;
+          margin-left: .5rem;
+          padding: 0 0.5rem;
         }
 
         .lst::after {
