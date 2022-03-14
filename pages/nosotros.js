@@ -68,7 +68,7 @@ function Nosotros() {
             <li>✔️ Las buena prácticas de convivencia</li>
             <li>
               ✔️ El manejo financiero eficaz para el beneficio de los
-              coopropietarios
+              copropietarios
             </li>
           </ol>
           <br />

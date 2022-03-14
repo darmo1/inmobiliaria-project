@@ -4,6 +4,7 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import CardHouses from './CardHouses'
 import useWindowSize from '../Hooks/useWindowSize'
+import Link from 'next/link';
 
 const HousesSection = ({data}) => {
 
@@ -39,7 +40,11 @@ const HousesSection = ({data}) => {
              
               {data.map( (card, index) => {
                  return (
-                     <CardHouses card={card} key={index} />
+                    <Link href={`/propiedades/${card._id}`}>
+                        <a>
+                        <CardHouses card={card} key={index} />
+                        </a>
+                    </Link>
                  )
              })}
 

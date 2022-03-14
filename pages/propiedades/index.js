@@ -1,5 +1,5 @@
 import React from 'react'
-import LayoutSecundary from '../Layout/LayoutSecundary'
+import LayoutSecundary from '../../Layout/LayoutSecundary'
 
 function Propiedades(){
     return (

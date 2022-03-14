@@ -77,6 +77,43 @@ export default {
         title: "Order",
         type: "number"
       },
+      {
+        name: "detalle",
+        title: "Detalle de la propiedad",
+        type: "string"
+      },
+      {
+        name: "imagedos",
+        title: "Imagen de casa",
+        type: "image",
+        option: {
+          hotspot: true,
+        },
+      },
+      {
+        name: "imagetres",
+        title: "Imagen de casa",
+        type: "image",
+        option: {
+          hotspot: true,
+        },
+      },
+      {
+        name: "imagecuatro",
+        title: "Imagen de casa",
+        type: "image",
+        option: {
+          hotspot: true,
+        },
+      },
+      {
+        name: "imagecinco",
+        title: "Imagen de casa",
+        type: "image",
+        option: {
+          hotspot: true,
+        },
+      },
     ],
   };
   

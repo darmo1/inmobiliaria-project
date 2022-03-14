@@ -2,8 +2,9 @@ import React from 'react'
 import { urlFor } from '../lib/sanity';
 import Image from 'next/image'
 
-const CardHouses = ({card}) => {
+const CardHouses = ({card, detalles}) => {
 
+        console.log(card)
 
     function renderStart( value ){
         switch( value ){
@@ -95,6 +96,10 @@ const CardHouses = ({card}) => {
                     <div className="font-semibold flex ">
                         Desde: {card.price}
                     </div>
+             </div>
+
+             <div>
+                 {detalles}
              </div>
              <style jsx>{`
              

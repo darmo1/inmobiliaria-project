@@ -45,7 +45,7 @@ export default function Home({ data, dataEquipo, posts }) {
       <br />
       <Products />
 
-      {/* <HousesSection data = {data}/> */}
+      <HousesSection data = {data}/>
       {/* <BannerPromo image='/banner2.jpg'  background="bg-bannerColor2"  /> */}
       <Equipo dataEquipo={dataEquipo} />
       <FeatureServices />
