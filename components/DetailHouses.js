@@ -29,34 +29,34 @@ const DetailHouses = ({ card }) => {
         <img
           src={`${urlFor(card.image)}`}
           alt="houses"
-          className="rounded-lg md:h-72  h-22 w-1/3 md:w-1/2 p-2 rounded-2xl"
+          className="rounded-lg md:h-72  h-22 w-full md:w-1/2 p-2 rounded-2xl"
         />
         {card?.["image-dos"] ? (
           <img
             src={`${urlFor(card?.["image-dos"])}`}
             alt="houses"
-            className="rounded-lg md:h-72  h-22 w-1/3 md:w-1/2 p-2 rounded-2xl"
+            className="rounded-lg md:h-72  h-22 w-full md:w-1/2 p-2 rounded-2xl"
           />
         ) : null}
         {card?.["image-tres"] ? (
           <img
             src={`${urlFor(card?.["image-tres"])}`}
             alt="houses"
-            className="rounded-lg md:h-72  h-22 w-1/3 md:w-1/2 p-2 rounded-2xl"
+            className="rounded-lg md:h-72  h-22 w-full md:w-1/2 p-2 rounded-2xl"
           />
         ) : null}
         {card?.["image-cuatro"] ? (
           <img
             src={`${urlFor(card?.["image-cuatro"])}`}
             alt="houses"
-            className="rounded-lg md:h-72  h-22 w-1/3 md:w-1/2 p-2 rounded-2xl"
+            className="rounded-lg md:h-72  h-22 w-full md:w-1/2 p-2 rounded-2xl"
           />
         ) : null}
         {card?.["image-cinco"] ? (
           <img
             src={`${urlFor(card?.["image-cinco"])}`}
             alt="houses"
-            className="rounded-lg md:h-72  h-22 w-1/3 md:w-1/2 p-2 rounded-2xl"
+            className="rounded-lg md:h-72  h-22 w-full md:w-1/2 p-2 rounded-2xl"
           />
         ) : null}
       </div>

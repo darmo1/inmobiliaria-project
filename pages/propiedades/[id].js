@@ -47,7 +47,7 @@ const DetallePropiedad = () => {
   }, [id]);
 
   return (
-    <main>
+    <main className="p-4">
       <h1 className="mx-auto text-4xl text-center my-4">Propiedades</h1>
 
       {loading ? (
