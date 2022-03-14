@@ -31,14 +31,12 @@ const queryHouses = `*[_type == 'houses']{
 const DetallePropiedad = () => {
   const router = useRouter();
   const { id } = router.query;
-
   const [apartment, setApartment] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
 
   React.useEffect(() => {
     async function fetchData() {
       const data = await sanityClient.fetch(queryHouses);
-      console.log(data, "here from data");
       const dataFilter = data.filter(({ _id }) => _id === id);
       setApartment(dataFilter)
       setLoading(false)
