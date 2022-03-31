@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const CardHouses = ({card, detalles}) => {
 
-        console.log(card)
+      
 
     function renderStart( value ){
         switch( value ){

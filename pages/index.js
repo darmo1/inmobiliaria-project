@@ -12,6 +12,7 @@ import Blog from "../components/Blog";
 import { BannerPromo } from "../components/BanerPromo";
 import Grid from "../components/Grid";
 import useWindowSize from "../Hooks/useWindowSize";
+import PQRS from "../components/PQRS";
 
 export default function Home({ data, dataEquipo, posts }) {
 
@@ -45,11 +46,13 @@ export default function Home({ data, dataEquipo, posts }) {
       <br />
       <Products />
 
+
       <HousesSection data = {data}/>
       {/* <BannerPromo image='/banner2.jpg'  background="bg-bannerColor2"  /> */}
       <Equipo dataEquipo={dataEquipo} />
       <FeatureServices />
       <Blog posts={posts} />
+      <PQRS />
       {
         width < 768 ? null : <Grid />
       }

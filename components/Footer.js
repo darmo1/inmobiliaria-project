@@ -12,7 +12,7 @@ const Footer = () => {
               <h3>Correo</h3>
               <span></span>
             </div>
-            <Link href="https://instagram.com/inmobiliariadonquijote">
+            <Link href="https://www.instagram.com/inmobiliariadonquijote/?utm_medium=copy_link">
               <a className="flex items-center" target={"_blank"}>
                 <Image
                   src="/instagram.png"
