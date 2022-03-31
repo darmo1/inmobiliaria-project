@@ -36,6 +36,10 @@ const Footer = () => {
               <h3 className="my-2 font-semibold">Teléfono fijo</h3>
               <span>(604) 473 04 58</span>
             </div>
+            <div>
+              <h3 className="my-2 font-semibold">Móvil</h3>
+              <span> 300 706 4360</span>
+            </div>
           </div>
 
           <div className="text-white">
