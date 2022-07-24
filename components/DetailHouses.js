@@ -26,39 +26,7 @@ const DetailHouses = ({ card }) => {
   return (
     <div className="bg-white  rounded-lg  min-h-full">
       <div className="flex flex-wrap justify-center mx-auto max-w-4xl  border rounded-lg">
-        <img
-          src={`${urlFor(card.image)}`}
-          alt="houses"
-          className="rounded-lg md:h-72  h-22 w-full md:w-1/2 p-2 rounded-2xl"
-        />
-        {card?.["image-dos"] ? (
-          <img
-            src={`${urlFor(card?.["image-dos"])}`}
-            alt="houses"
-            className="rounded-lg md:h-72  h-22 w-full md:w-1/2 p-2 rounded-2xl"
-          />
-        ) : null}
-        {card?.["image-tres"] ? (
-          <img
-            src={`${urlFor(card?.["image-tres"])}`}
-            alt="houses"
-            className="rounded-lg md:h-72  h-22 w-full md:w-1/2 p-2 rounded-2xl"
-          />
-        ) : null}
-        {card?.["image-cuatro"] ? (
-          <img
-            src={`${urlFor(card?.["image-cuatro"])}`}
-            alt="houses"
-            className="rounded-lg md:h-72  h-22 w-full md:w-1/2 p-2 rounded-2xl"
-          />
-        ) : null}
-        {card?.["image-cinco"] ? (
-          <img
-            src={`${urlFor(card?.["image-cinco"])}`}
-            alt="houses"
-            className="rounded-lg md:h-72  h-22 w-full md:w-1/2 p-2 rounded-2xl"
-          />
-        ) : null}
+       
       </div>
 
       <div className="flex flex-col items-center">

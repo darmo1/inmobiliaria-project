@@ -3,6 +3,9 @@ import { sanityClient } from "../../lib/sanity";
 import { useRouter } from "next/router";
 import CardHouses from "../../components/CardHouses";
 import DetailHouses from "../../components/DetailHouses";
+import { Carousel } from 'react-responsive-carousel';
+import useWindowSize from '../../Hooks/useWindowSize'
+import { urlFor } from "../../lib/sanity";
 
 const queryHouses = `*[_type == 'houses']{
     _id,
@@ -44,6 +47,11 @@ const DetallePropiedad = () => {
     fetchData();
   }, [id]);
 
+  const { width } = useWindowSize()
+
+  const displayCount = width >= 640 ? 3 : 1
+    const [currentIndex, setSlide] = React.useState(0)
+
   return (
     <main className="p-4">
       <h1 className="mx-auto text-4xl text-center my-4">Propiedades</h1>
@@ -53,7 +61,61 @@ const DetallePropiedad = () => {
       ) : apartment.length === 0 ? (
         <div>En este momento no está disponible esta propiedad</div>
       ) : (
-        <DetailHouses card={apartment[0]} />
+        <>
+        <Carousel
+        dynamicHeight={false}  
+         showThumbs={false}
+         infiniteLoop={true}
+         showStatus={false}
+         showArrows={true}
+         autoPlay={false}
+         stopOnHover={true}
+         swipeable={true}
+         className="flex justify-center mx-auto py-8"
+         width={1200}
+        
+         centerMode
+         centerSlidePercentage={100 / displayCount}
+         selectedItem={currentIndex}
+        >
+          
+          <img
+          src={`${urlFor(apartment[0].image)}`}
+          alt="houses"
+          className="rounded-lg md:h-72  h-22 w-full md:w-1/2 p-2 rounded-2xl"
+        />
+        {apartment[0]?.["image-dos"] ? (
+          <img
+            src={`${urlFor(apartment[0]?.["image-dos"])}`}
+            alt="houses"
+            className="rounded-lg md:h-72  h-22 w-full md:w-1/2 p-2 rounded-2xl"
+          />
+        ) : null}
+        {apartment[0]?.["image-tres"] ? (
+          <img
+            src={`${urlFor(apartment[0]?.["image-tres"])}`}
+            alt="houses"
+            className="rounded-lg md:h-72  h-22 w-full md:w-1/2 p-2 rounded-2xl"
+          />
+        ) : null}
+        {apartment[0]?.["image-cuatro"] ? (
+          <img
+            src={`${urlFor(apartment[0]?.["image-cuatro"])}`}
+            alt="houses"
+            className="rounded-lg md:h-72  h-22 w-full md:w-1/2 p-2 rounded-2xl"
+          />
+        ) : null}
+        {apartment[0]?.["image-cinco"] ? (
+          <img
+            src={`${urlFor(apartment[0]?.["image-cinco"])}`}
+            alt="houses"
+            className="rounded-lg md:h-72  h-22 w-full md:w-1/2 p-2 rounded-2xl"
+          />
+        ) : null}
+          
+        </Carousel>
+          <DetailHouses card={apartment[0]} />
+        </>
       )}
     </main>
   );
