@@ -45,19 +45,19 @@ const DetailHouses = ({ card }) => {
               alt="habitaciones"
               className="w-6 mr-2"
             />
-            {card.habitaciones} Habitaciones
+            {card.habitaciones ?? 0} Habitaciones
           </span>
           <span className="text-sm flex my-2 items-center">
             <img src="/cocina.svg" alt="habitaciones" className="w-6 mr-2" />
             {card.habitaciones === 1
-              ? `${card.cocinas} cocina`
-              : `${card.cocinas} cocinas`}
+              ? `${card.cocinas ?? 0} cocina`
+              : `${card.cocinas?? 0} cocinas`}
           </span>
           <span className="text-sm flex my-2 items-center">
             <img src="/bathroom.svg" alt="habitaciones" className="w-6 mr-2" />
             {card.habitaciones === 1
-              ? `${card.bathroom} baño`
-              : `${card.bathroom} baños`}
+              ? `${card.bathroom ?? 0} baño`
+              : `${card.bathroom?? 0} baños`}
           </span>
           <span className="text-sm flex items-center my-2">
             {card.parqueadero && (

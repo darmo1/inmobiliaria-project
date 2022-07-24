@@ -61,7 +61,7 @@ const DetallePropiedad = () => {
       ) : apartment.length === 0 ? (
         <div>En este momento no está disponible esta propiedad</div>
       ) : (
-        <>
+        <div>
         <Carousel
         dynamicHeight={false}  
          showThumbs={false}
@@ -84,7 +84,7 @@ const DetallePropiedad = () => {
           className="rounded-lg md:h-72  h-22 w-full md:w-1/2 p-2 rounded-2xl"
         />
          </div>
-        {apartment[0]?.["image-dos"] ? (
+      
          <div>
             <img
             src={`${urlFor(apartment[0]?.["image-dos"])}`}
@@ -92,8 +92,8 @@ const DetallePropiedad = () => {
             className="rounded-lg md:h-72  h-22 w-full md:w-1/2 p-2 rounded-2xl"
           />
          </div>
-        ) : null}
-        {apartment[0]?.["image-tres"] ? (
+        
+       
          <div>
             <img
             src={`${urlFor(apartment[0]?.["image-tres"])}`}
@@ -101,8 +101,7 @@ const DetallePropiedad = () => {
             className="rounded-lg md:h-72  h-22 w-full md:w-1/2 p-2 rounded-2xl"
           />
          </div>
-        ) : null}
-        {apartment[0]?.["image-cuatro"] ? (
+  
           <div>
             <img
             src={`${urlFor(apartment[0]?.["image-cuatro"])}`}
@@ -110,8 +109,8 @@ const DetallePropiedad = () => {
             className="rounded-lg md:h-72  h-22 w-full md:w-1/2 p-2 rounded-2xl"
           />
           </div>
-        ) : null}
-        {apartment[0]?.["image-cinco"] ? (
+    
+       
          <div>
             <img
             src={`${urlFor(apartment[0]?.["image-cinco"])}`}
@@ -119,11 +118,10 @@ const DetallePropiedad = () => {
             className="rounded-lg md:h-72  h-22 w-full md:w-1/2 p-2 rounded-2xl"
           />
          </div>
-        ) : null}
           
         </Carousel>
           <DetailHouses card={apartment[0]} />
-        </>
+        </div>
       )}
     </main>
   );
