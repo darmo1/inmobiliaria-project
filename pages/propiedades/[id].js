@@ -72,8 +72,6 @@ const DetallePropiedad = () => {
          stopOnHover={true}
          swipeable={true}
          className="flex justify-center mx-auto py-8"
-         width={1200}
-        
          centerMode
          centerSlidePercentage={100 / displayCount}
          selectedItem={currentIndex}

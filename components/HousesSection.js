@@ -40,7 +40,7 @@ const HousesSection = ({data}) => {
              
               {data.map( (card, index) => {
                  return (
-                    <Link href={`/propiedades/${card._id}`}>
+                    <Link href={`/propiedades/${card._id}`}  key={index}>
                         <a>
                         <CardHouses card={card} key={index} />
                         </a>
