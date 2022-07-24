@@ -1,11 +1,11 @@
 import React from "react";
-import { sanityClient } from "../../lib/sanity";
+import { sanityClient , urlFor } from "../../lib/sanity";
 import { useRouter } from "next/router";
 import CardHouses from "../../components/CardHouses";
 import DetailHouses from "../../components/DetailHouses";
 import { Carousel } from 'react-responsive-carousel';
 import useWindowSize from '../../Hooks/useWindowSize'
-import { urlFor } from "../../lib/sanity";
+
 
 const queryHouses = `*[_type == 'houses']{
     _id,
