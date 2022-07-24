@@ -53,7 +53,7 @@ const DetallePropiedad = () => {
     const [currentIndex, setSlide] = React.useState(0)
 
   return (
-    <main className="p-4">
+    <main className="p-4" id="properties">
       <h1 className="mx-auto text-4xl text-center my-4">Propiedades</h1>
 
       {loading ? (
@@ -79,38 +79,48 @@ const DetallePropiedad = () => {
          selectedItem={currentIndex}
         >
           
-          <img
+         <div>
+         <img
           src={`${urlFor(apartment[0].image)}`}
           alt="houses"
           className="rounded-lg md:h-72  h-22 w-full md:w-1/2 p-2 rounded-2xl"
         />
+         </div>
         {apartment[0]?.["image-dos"] ? (
-          <img
+         <div>
+            <img
             src={`${urlFor(apartment[0]?.["image-dos"])}`}
             alt="houses"
             className="rounded-lg md:h-72  h-22 w-full md:w-1/2 p-2 rounded-2xl"
           />
+         </div>
         ) : null}
         {apartment[0]?.["image-tres"] ? (
-          <img
+         <div>
+            <img
             src={`${urlFor(apartment[0]?.["image-tres"])}`}
             alt="houses"
             className="rounded-lg md:h-72  h-22 w-full md:w-1/2 p-2 rounded-2xl"
           />
+         </div>
         ) : null}
         {apartment[0]?.["image-cuatro"] ? (
-          <img
+          <div>
+            <img
             src={`${urlFor(apartment[0]?.["image-cuatro"])}`}
             alt="houses"
             className="rounded-lg md:h-72  h-22 w-full md:w-1/2 p-2 rounded-2xl"
           />
+          </div>
         ) : null}
         {apartment[0]?.["image-cinco"] ? (
-          <img
+         <div>
+            <img
             src={`${urlFor(apartment[0]?.["image-cinco"])}`}
             alt="houses"
             className="rounded-lg md:h-72  h-22 w-full md:w-1/2 p-2 rounded-2xl"
           />
+         </div>
         ) : null}
           
         </Carousel>
