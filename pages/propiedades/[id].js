@@ -3,8 +3,9 @@ import { sanityClient , urlFor } from "../../lib/sanity";
 import { useRouter } from "next/router";
 import CardHouses from "../../components/CardHouses";
 import DetailHouses from "../../components/DetailHouses";
-import { Carousel } from 'react-responsive-carousel';
+
 import useWindowSize from '../../Hooks/useWindowSize'
+import CarouselComponent from "../../components/Carousel/Carousel";
 
 
 const queryHouses = `*[_type == 'houses']{
@@ -62,64 +63,7 @@ const DetallePropiedad = () => {
         <div>En este momento no está disponible esta propiedad</div>
       ) : (
         <div>
-        <Carousel
-        dynamicHeight={false}  
-         showThumbs={false}
-         infiniteLoop={true}
-         showStatus={false}
-         showArrows={true}
-         autoPlay={false}
-         stopOnHover={true}
-         swipeable={true}
-         className="flex justify-center mx-auto py-8"
-         centerMode
-         centerSlidePercentage={100 / displayCount}
-         selectedItem={currentIndex}
-        >
-          
-         <div>
-         <img
-          src={`${urlFor(apartment[0].image)}`}
-          alt="houses"
-          className="rounded-lg md:h-72  h-22 w-full md:w-1/2 p-2 rounded-2xl"
-        />
-         </div>
-      
-         <div>
-            <img
-            src={`${urlFor(apartment[0]?.["image-dos"])}`}
-            alt="houses"
-            className="rounded-lg md:h-72  h-22 w-full md:w-1/2 p-2 rounded-2xl"
-          />
-         </div>
-        
-       
-         <div>
-            <img
-            src={`${urlFor(apartment[0]?.["image-tres"])}`}
-            alt="houses"
-            className="rounded-lg md:h-72  h-22 w-full md:w-1/2 p-2 rounded-2xl"
-          />
-         </div>
-  
-          <div>
-            <img
-            src={`${urlFor(apartment[0]?.["image-cuatro"])}`}
-            alt="houses"
-            className="rounded-lg md:h-72  h-22 w-full md:w-1/2 p-2 rounded-2xl"
-          />
-          </div>
-    
-       
-         <div>
-            <img
-            src={`${urlFor(apartment[0]?.["image-cinco"])}`}
-            alt="houses"
-            className="rounded-lg md:h-72  h-22 w-full md:w-1/2 p-2 rounded-2xl"
-          />
-         </div>
-          
-        </Carousel>
+          <CarouselComponent displayCount={displayCount} data={apartment} currentIndex={currentIndex} />
           <DetailHouses card={apartment[0]} />
         </div>
       )}

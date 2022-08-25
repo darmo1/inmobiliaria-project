@@ -1,0 +1,24 @@
+[
+    {
+        "_id": "10b6f848-de2d-4333-ad25-b1e029f56de5",
+        "address": null,
+        "bathroom": null,
+        "cocinas": null,
+        "comedor": null,
+        "detalle": "Lotes de 2100 metros cuadrados, ubicados a 30 minutos de Bello, cerca a la carretera principal, acceso por placa huella con excelente vista.",
+        "habitaciones": null,
+        "image": "https://cdn.sanity.io/images/68f3de3x/production/355474bc2db44614e366ed4606e2e66f959286d0-1040x780.jpg",
+        "image-cinco": "https://cdn.sanity.io/images/68f3de3x/production/148c01e758c016fd8a432382d6fd18995c82ea35-1280x720.jpg",
+        "image-cuatro": "https://cdn.sanity.io/images/68f3de3x/production/9c74c86413c084cd031428b7ddaf0a340ca47d6c-720x1280.jpg",
+        "image-dos": "https://cdn.sanity.io/images/68f3de3x/production/148c01e758c016fd8a432382d6fd18995c82ea35-1280x720.jpg",
+        "image-tres": "https://cdn.sanity.io/images/68f3de3x/production/9c74c86413c084cd031428b7ddaf0a340ca47d6c-720x1280.jpg",
+        "name": "Lotes a 30 minutos de Bello",
+        "order": null,
+        "parqueadero": null,
+        "patios": null,
+        "piscina": null,
+        "price": "200.000.000 negociables",
+        "sala": null,
+        "valoracion": 5
+    }
+]

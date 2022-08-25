@@ -4,7 +4,7 @@ import Layout from '../Layout'
 
 
 const ID_GOOGLE_ANALYTICS = process.env.ID_GOOGLE_ANALYTICS
-console.log(ID_GOOGLE_ANALYTICS)
+
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>

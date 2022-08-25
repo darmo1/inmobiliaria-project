@@ -33,10 +33,10 @@ const DetailHouses = ({ card }) => {
         <h1 className="text-xl text-gray-600 font-semibold my-2">
           {card.name}{" "}
         </h1>
-        <p className=" flex text-sm">
+        <div className=" flex text-sm">
           {" "}
           Valoracion: {renderStart(card.valoracion)}{" "}
-        </p>
+        </div>
         <div className="w-4/5 mb-4">
             <h1>Detalles</h1>
           <span className="text-sm flex my-2 items-center">
