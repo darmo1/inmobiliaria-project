@@ -16,41 +16,41 @@ const CarouselComponent = ({ data }) => {
   return (
     <div className="my-8">
     <Slider {...settings}>
-      <div>
+      {apartment.image && <div>
         <img
           src={`${urlFor(apartment.image)}`}
           alt="houses"
           className="rounded-lg md:h-72  h-22 w-full  p-2 rounded-2xl"
         />
-      </div>
-      <div>
+      </div>}
+      {apartment?.["image-dos"] && <div>
         <img
           src={`${urlFor(apartment?.["image-dos"])}`}
           alt="houses"
           className="rounded-lg md:h-72  h-22 w-full  p-2 rounded-2xl"
         />
-      </div>
-      <div>
+      </div>}
+      {apartment?.["image-tres"] && <div>
         <img
           src={`${urlFor(apartment?.["image-tres"])}`}
           alt="houses"
           className="rounded-lg md:h-72  h-22 w-full  p-2 rounded-2xl"
         />
-      </div>
-      <div>
+      </div>}
+      {apartment?.["image-cuatro"] && <div>
         <img
           src={`${urlFor(apartment?.["image-cuatro"])}`}
           alt="houses"
           className="rounded-lg md:h-72  h-22 w-full  p-2 rounded-2xl"
         />
-      </div>
-      <div>
+      </div>}
+      {apartment?.["image-cinco"] && <div>
         <img
           src={`${urlFor(apartment?.["image-cinco"])}`}
           alt="houses"
           className="rounded-lg md:h-72  h-22 w-full  p-2 rounded-2xl"
         />
-      </div>
+      </div>}
     </Slider>
     </div>
   );
@@ -82,7 +82,7 @@ function SamplePrevArrow(props) {
         ...style,
         display: "block",
         background: "#5e0817",
-        borderRadius: "10px",
+        borderRadius: "10px"
       }}
       onClick={onClick}
     />

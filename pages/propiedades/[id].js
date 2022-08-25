@@ -54,7 +54,7 @@ const DetallePropiedad = () => {
     const [currentIndex, setSlide] = React.useState(0)
 
   return (
-    <main className="p-4 max-w-5xl mx-auto" id="properties">
+    <main className="p-8 max-w-5xl mx-auto" id="properties">
       <h1 className="mx-auto text-4xl text-center my-4">Propiedades</h1>
 
       {loading ? (
