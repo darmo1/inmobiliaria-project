@@ -54,7 +54,7 @@ const DetallePropiedad = () => {
     const [currentIndex, setSlide] = React.useState(0)
 
   return (
-    <main className="p-4" id="properties">
+    <main className="p-4 max-w-5xl mx-auto" id="properties">
       <h1 className="mx-auto text-4xl text-center my-4">Propiedades</h1>
 
       {loading ? (
@@ -63,7 +63,7 @@ const DetallePropiedad = () => {
         <div>En este momento no está disponible esta propiedad</div>
       ) : (
         <div>
-          <CarouselComponent displayCount={displayCount} data={apartment} currentIndex={currentIndex} />
+          <CarouselComponent data={apartment} />
           <DetailHouses card={apartment[0]} />
         </div>
       )}
