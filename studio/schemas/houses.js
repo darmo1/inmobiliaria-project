@@ -9,6 +9,12 @@ export default {
         type: "string",
       },
       {
+        name: 'categories',
+        title: 'Categories',
+        type: 'array',
+        of: [{type: 'reference', to: {type: 'category'}}],
+      },
+      {
         name: "image",
         title: "Imagen de casa",
         type: "image",
@@ -74,7 +80,7 @@ export default {
       
       {
         name: "order",
-        title: "Order",
+        title: "Orden- Describe segun la importancia de inmueble siendo 1 muy importante y entre más grande el numero menor importancia",
         type: "number"
       },
       {
@@ -108,6 +114,46 @@ export default {
       },
       {
         name: "imagecinco",
+        title: "Imagen de casa",
+        type: "image",
+        option: {
+          hotspot: true,
+        },
+      },
+      {
+        name: "imageseis",
+        title: "Imagen de casa",
+        type: "image",
+        option: {
+          hotspot: true,
+        },
+      },
+      {
+        name: "imagesiete",
+        title: "Imagen de casa",
+        type: "image",
+        option: {
+          hotspot: true,
+        },
+      },
+      {
+        name: "imageocho",
+        title: "Imagen de casa",
+        type: "image",
+        option: {
+          hotspot: true,
+        },
+      },
+      {
+        name: "imagenueve",
+        title: "Imagen de casa",
+        type: "image",
+        option: {
+          hotspot: true,
+        },
+      },
+      {
+        name: "imagediez",
         title: "Imagen de casa",
         type: "image",
         option: {
