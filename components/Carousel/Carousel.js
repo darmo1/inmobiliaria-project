@@ -1,6 +1,5 @@
 import React from "react";
 import Slider from "react-slick";
-import { urlFor } from "../../lib/sanity";
 
 const CarouselComponent = ({ data }) => {
   const [apartment] = data;
@@ -16,37 +15,73 @@ const CarouselComponent = ({ data }) => {
   return (
     <div className="my-8">
     <Slider {...settings}>
-      {apartment.image && <div>
+      {apartment?.image && <div>
         <img
-          src={`${urlFor(apartment.image)}`}
+          src={apartment?.image}
           alt="houses"
           className="rounded-lg md:h-72  h-22 w-full  p-2 rounded-2xl"
         />
       </div>}
       {apartment?.["image-dos"] && <div>
         <img
-          src={`${urlFor(apartment?.["image-dos"])}`}
+          src={apartment?.["image-dos"]}
           alt="houses"
           className="rounded-lg md:h-72  h-22 w-full  p-2 rounded-2xl"
         />
       </div>}
       {apartment?.["image-tres"] && <div>
         <img
-          src={`${urlFor(apartment?.["image-tres"])}`}
+          src={apartment?.["image-tres"]}
           alt="houses"
           className="rounded-lg md:h-72  h-22 w-full  p-2 rounded-2xl"
         />
       </div>}
       {apartment?.["image-cuatro"] && <div>
         <img
-          src={`${urlFor(apartment?.["image-cuatro"])}`}
+          src={apartment?.["image-cuatro"]}
           alt="houses"
           className="rounded-lg md:h-72  h-22 w-full  p-2 rounded-2xl"
         />
       </div>}
       {apartment?.["image-cinco"] && <div>
         <img
-          src={`${urlFor(apartment?.["image-cinco"])}`}
+          src={apartment?.["image-cinco"]}
+          alt="houses"
+          className="rounded-lg md:h-72  h-22 w-full  p-2 rounded-2xl"
+        />
+      </div>}
+      {apartment?.["image-seis"] && <div>
+        <img
+          src={apartment?.["image-seis"]}
+          alt="houses"
+          className="rounded-lg md:h-72  h-22 w-full  p-2 rounded-2xl"
+        />
+      </div>}
+
+      {apartment?.["image-siete"] && <div>
+        <img
+          src={apartment?.["image-siete"]}
+          alt="houses"
+          className="rounded-lg md:h-72  h-22 w-full  p-2 rounded-2xl"
+        />
+      </div>}
+      {apartment?.["image-ocho"] && <div>
+        <img
+          src={apartment?.["image-ocho"]}
+          alt="houses"
+          className="rounded-lg md:h-72  h-22 w-full  p-2 rounded-2xl"
+        />
+      </div>}
+      {apartment?.["image-nueve"] && <div>
+        <img
+          src={apartment?.["image-nueve"]}
+          alt="houses"
+          className="rounded-lg md:h-72  h-22 w-full  p-2 rounded-2xl"
+        />
+      </div>}
+      {apartment?.["image-diez"] && <div>
+        <img
+          src={apartment?.["image-diez"]}
           alt="houses"
           className="rounded-lg md:h-72  h-22 w-full  p-2 rounded-2xl"
         />

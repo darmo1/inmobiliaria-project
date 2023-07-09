@@ -7,7 +7,7 @@ export const BannerPromo = (props) => {
             <div className={` rounded-l-lg col-start-1  ${props.background || 'bg-bannerColor'}`}>
                 <div className=' p-4 w-3/4 mx-auto h-full flex flex-col justify-center ' >
                     <h1 className='text-4xl text-white'>Kit promocional  </h1>
-                    <p className='my-4 text-gray-900'> Te damos 40% de descuento en el primer año, lorem ipsu , lorem ipsu <small className='text-xs'>Aplica terminos y condiciones</small>   </p>
+                    <div className='my-4 text-gray-900'> Te damos 40% de descuento en el primer año, lorem ipsu , lorem ipsu <small className='text-xs'>Aplica terminos y condiciones</small>   </div>
                     <Link href="https://api.whatsapp.com/send?phone=573116703825">
                     <button className='flex w-max rounded-lg font-semibold bg-yellow-400 py-1 px-3 hover:bg-blue-400'>Quiero la promoción</button>
                     </Link>

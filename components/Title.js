@@ -28,7 +28,7 @@ const Title = (props) => {
 
   return (
     <div className="max-w-4xl flex my-16 mx-auto mb-28 justify-center items-center">
-      <p className="text-5xl "> {title(props.pathname, props.name)} </p>
+      <div className="text-5xl "> {title(props.pathname, props.name)} </div>
     </div>
   );
 };

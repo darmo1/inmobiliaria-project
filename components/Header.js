@@ -41,7 +41,7 @@ const Header = () => {
           <div onClick={OpenMenu} className="relative pt-8 block">
             <div className=" bg-customRedLight rounded-r-lg flex justify-center items-center w-1/6 ">
             <Link href="/">
-            <a>
+           
             <Image
               src="/menuIcon.svg"
               alt="Icono-mobile"
@@ -49,7 +49,7 @@ const Header = () => {
               height="35"
             className=""
             />
-            </a>
+           
             </Link>
             </div>
 
@@ -64,13 +64,13 @@ const Header = () => {
                 {menuNavBar.map((item) => {
                   return (
                     <Link href={item.url} key={item.id}>
-                      <a>
+                  
                         <li
                           className={`${item.itemClassName} text-black my-4 hover:bg-purple`}
                         >
                           {item.itemName}
                         </li>
-                      </a>
+                
                     </Link>
                   );
                 })}
@@ -80,7 +80,7 @@ const Header = () => {
           <div className="flex justify-center ">
            <Link href="/">
              <div className="bg-white rounded-2xl p-4 flex flex-col items-center">
-             <a>
+            
              <div className="flex justify-center mb-1">
              <Image
                 src="/LogoInmobiliariaDonQuijote.png"
@@ -94,7 +94,7 @@ const Header = () => {
                     <p className="font-bold text-lg">Inmobiliaria</p>
                     <p className="font-bold text-lg">Don Quijote</p>
                   </div>
-            </a>
+           
 
              </div>
            </Link>
@@ -110,7 +110,7 @@ const Header = () => {
           <div className="">
             <nav className="max-w-5xl mx-auto flex md:justify-between bg-customRed pr-8   rounded-2xl">
               <Link href={"/"}>
-                <a>
+              
                   <div className=" bg-white pr-4 pl-2 flex items-center rounded-l-xl">
                   <Image src="/LogoInmobiliariaDonQuijote.png" alt="logo" width="90" height="90" className="" />
                   <div className="flex flex-col items-center">
@@ -119,18 +119,18 @@ const Header = () => {
                   </div>
 
                   </div>
-                </a>
+               
               </Link>
 
               <ul className="md:flex  md:justify-evenly items-center">
                 {menuNavBar.map((item) => {
                   return (
                     <Link href={item.url} key={item.id}>
-                      <a>
+                     
                         <li className={`${item.itemClassName} text-white`}>
                           {item.itemName}
                         </li>
-                      </a>
+                   
                     </Link>
                   );
                 })}

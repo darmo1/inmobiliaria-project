@@ -19,12 +19,12 @@ export const menuNavBar = [
         itemClassName: `${classStyle} ` ,
         url:"/nosotros"
     },
-    {
-        id:4,
-        itemName: 'Blog',
-        itemClassName: `${classStyle} ` ,
-        url:"/blog"
-    },
+    // {
+    //     id:4,
+    //     itemName: 'Blog',
+    //     itemClassName: `${classStyle} ` ,
+    //     url:"/blog"
+    // },
    
     {
         id:3,

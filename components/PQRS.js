@@ -1,5 +1,8 @@
-import React from "react";
-import { sanityClient } from "../lib/sanity";
+
+'use client'
+
+import * as React from "react";
+import sanityClient  from "../lib/sanity";
 import ItemPQR from "./ItemPQR";
 
 const PQRS = () => {

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { sanityClient } from "../../lib/sanity";
+import sanityClient  from "../../lib/sanity";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import CardPosts from "../../components/CardPosts";
@@ -18,9 +18,7 @@ export default function Blog({ response }) {
       {response.map(( post, index )=> {
           return (
             <Link href={"/blog/" + post.slug.current} key={index} passHref>
-          <a>
             <CardPosts post={post} />
-          </a>
         </Link>
           )
       })}

@@ -1,9 +1,7 @@
 import React from "react";
-import { sanityClient , urlFor } from "../../lib/sanity";
+import sanityClient, { urlFor } from "../../lib/sanity";
 import { useRouter } from "next/router";
-import CardHouses from "../../components/CardHouses";
 import DetailHouses from "../../components/DetailHouses";
-
 import useWindowSize from '../../Hooks/useWindowSize'
 import CarouselComponent from "../../components/Carousel/Carousel";
 
@@ -21,6 +19,11 @@ const queryHouses = `*[_type == 'houses']{
    'image-tres': imagetres.asset->url,
    'image-cuatro': imagecuatro.asset->url,
    'image-cinco': imagecinco.asset->url,
+   'image-seis': imageseis.asset->url,
+   'image-siete': imagesiete.asset->url,
+   'image-ocho': imageocho.asset->url,
+   'image-nueve': imagenueve.asset->url,
+   'image-diez': imagediez.asset->url,
     name,
     order,
     parqueadero,
@@ -73,15 +76,3 @@ const DetallePropiedad = () => {
 
 export default DetallePropiedad;
 
-// export async function getStaticProps(context) {
-
-//     const data = context
-//     console.log(context)
-//     // const data = await sanityClient.fetch(queryHouses);
-//     // console.log(data)
-
-//     return {
-//       props: { data },
-//       revalidate: 10,
-//     };
-//   }

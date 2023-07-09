@@ -12,8 +12,8 @@ const Footer = () => {
               <h3>Correo</h3>
               <span></span>
             </div>
-            <Link href="https://www.instagram.com/inmobiliariadonquijote/?utm_medium=copy_link">
-              <a className="flex items-center" target={"_blank"}>
+            <Link href="https://www.instagram.com/inmobiliariadonquijote/?utm_medium=copy_link" className="flex items-center" target={"_blank"}>
+             
                 <Image
                   src="/instagram.png"
                   alt="icon-instagram"
@@ -23,7 +23,7 @@ const Footer = () => {
                 <div className="text-white font-semibold ml-2">
                   @inmobiliariadonquijote
                 </div>
-              </a>
+             
             </Link>
           </div>
 

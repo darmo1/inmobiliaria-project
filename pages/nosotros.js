@@ -8,8 +8,8 @@ function Nosotros() {
       <div className="max-w-4xl mx-auto px-6">
         <h1 className="text-xl mb-4"> Quiénes Somos </h1>
         <p className="text-justify">
-          <Link href="/">
-            <a className="font-bold">INMOBILIARIA DON QUIJOTE</a>
+          <Link href="/" className="font-bold">
+            INMOBILIARIA DON QUIJOTE
           </Link>{" "}
           nació del sueño de velar por la calidad de vida y el bienestar de la
           comunidad que conforma una Propiedad Horizontal.{" "}
@@ -45,7 +45,7 @@ function Nosotros() {
         <br />
 
         <h1 className="text-xl mb-4"> VALORES CORPORATIVOS </h1>
-        <ol className="ml-12 my-4">
+        <ul className="ml-12 my-4">
           <li>✔️ Adaptabilidad </li>
           <li>💡 Claridad </li>
           <li>🤝 Compromiso</li>
@@ -53,7 +53,7 @@ function Nosotros() {
           <li>👩‍🔧 Excelencia</li>
           <li>🧑‍💼 Lealtad</li>
           <li>🧑‍🚀 integridad</li>
-        </ol>
+        </ul>
 
         <p>
           💡 Somos una empresa dedicada a la administración de la propiedad

@@ -7,7 +7,7 @@ const Grid = () => {
     <div className="max-w-4xl mx-auto md:grid md:grid-col-presentationalCol md:grid-row-presentationalRow gap-2 flex flex-col md:h-96 my-4">
       <div className="row-start-1 row-end-3 col-start-1 col-end-2  relative rounded-2xl">
         <Link href="/servicios">
-          <a>
+       
             <>
               <Image
                 src="/adminProperties.jpg"
@@ -23,13 +23,13 @@ const Grid = () => {
                 </p>
               </div>
             </>
-          </a>
+        
         </Link>
       </div>
 
       <div className="row-start-1 row-end-2 col-start-2 col-end-3  relative">
         <Link href="/servicios">
-          <a>
+       
             <>
               <Image
                 src="/law.jpg"
@@ -40,15 +40,15 @@ const Grid = () => {
               />
               <div className="absolute bottom-2  w-full backdrop-filter backdrop-blur-xl h-content px-4 my-4 ">
                 <h1 className="text-2xl">Servicios Jurídicos</h1>
-                <p>Asesoramiento y procesos legales</p>
+                <div>Asesoramiento y procesos legales</div>
               </div>
             </>
-          </a>
+        
         </Link>
       </div>
       <div className="row-start-2 row-end-3 col-start-2 col-end-3  relative rounded-2xl">
         <Link href="/servicios">
-          <a>
+        
             <>
               <Image
                 src="/mueble-pink.jpg"
@@ -59,10 +59,10 @@ const Grid = () => {
               />
               <div className="absolute bottom-2  w-full backdrop-filter backdrop-blur-md h-content px-4 my-4">
                 <h1 className="text-2xl">Ventas de muebles e inmuebles</h1>
-                <p>Administramos y te ayudamos a vender muebles e inmuebles</p>
+                <div>Administramos y te ayudamos a vender muebles e inmuebles</div>
               </div>
             </>
-          </a>
+         
         </Link>
       </div>
     </div>

@@ -4,7 +4,7 @@ import Image from "next/image";
 import FeatureServices from "../components/FeatureServices";
 import HousesSection from "../components/HousesSection";
 import Products from "../components/Products";
-import { sanityClient } from "../lib/sanity";
+import sanityClient  from "../lib/sanity";
 import styles from "../styles/Home.module.css";
 import Banner from "../components/Banner";
 import Equipo from "../components/Equipo";
@@ -15,7 +15,6 @@ import useWindowSize from "../Hooks/useWindowSize";
 import PQRS from "../components/PQRS";
 
 export default function Home({ data, dataEquipo, posts }) {
-
   const { width } = useWindowSize();
 
   return (
@@ -51,7 +50,7 @@ export default function Home({ data, dataEquipo, posts }) {
       {/* <BannerPromo image='/banner2.jpg'  background="bg-bannerColor2"  /> */}
       <Equipo dataEquipo={dataEquipo} />
       <FeatureServices />
-      <Blog posts={posts} />
+      {/* <Blog posts={posts} /> */}
       <PQRS />
       {
         width < 768 ? null : <Grid />
@@ -61,7 +60,7 @@ export default function Home({ data, dataEquipo, posts }) {
   );
 }
 
-const queryHouses = `*[_type == 'houses']{
+const queryHouses = `*[_type == 'houses'] | order(_createdAt desc)[0..9]{
   _id,
   address,
   bathroom,

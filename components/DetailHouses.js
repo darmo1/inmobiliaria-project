@@ -6,20 +6,20 @@ const DetailHouses = ({ card }) => {
   function renderStart(value) {
     switch (value) {
       case 1:
-        return <p className="text-sm ml-2"> ⭐☆☆☆☆ </p>;
+        return <div className="text-sm ml-2"> ⭐☆☆☆☆ </div>;
       case 2:
         return (
-          <p className="text-sm ml-2" ml-2>
+          <div className="text-sm ml-2" ml-2>
             {" "}
             ⭐⭐☆☆☆{" "}
-          </p>
+          </div>
         );
       case 3:
-        return <p className="text-sm ml-2"> ⭐⭐⭐☆☆ </p>;
+        return <div className="text-sm ml-2"> ⭐⭐⭐☆☆ </div>;
       case 4:
-        return <p className="text-sm ml-2"> ⭐⭐⭐⭐☆ </p>;
+        return <div className="text-sm ml-2"> ⭐⭐⭐⭐☆ </div>;
       case 5:
-        return <p className="text-sm ml-2"> ⭐⭐⭐⭐⭐ </p>;
+        return <div className="text-sm ml-2"> ⭐⭐⭐⭐⭐ </div>;
     }
   }
 

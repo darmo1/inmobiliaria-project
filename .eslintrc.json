@@ -1,3 +1,6 @@
+
 {
-  "extends": ["next/babel","next/core-web-vitals"]
-}
+  "requireConfigFile": false,
+"babelOptions": {
+  "presets": ["@babel/preset-react"]
+}}
