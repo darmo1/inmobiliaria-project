@@ -29,6 +29,7 @@ const CardHouses = ({card, detalles}) => {
                  //src={`${urlFor(card?.image)}` } 
                  src={card?.image } 
                  className="rounded-lg md:h-48  mx-auto h-22"
+                 loading='lazy'
                  />
              </div>
 

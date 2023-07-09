@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import Image from "next/image";
 import ContainerService from "../components/ContainerService";
@@ -22,9 +23,10 @@ const Products = ({ children }) => {
                   <Image 
                   src={product.img} 
                   alt="product-list" 
-                  width="150" 
-                  height="150" 
-                  className="rounded-full"
+                  width={150}
+                  height={150}
+                  className="rounded-full h-44 w-44"
+                  loading="lazy"
                   />
                   </div>
                   

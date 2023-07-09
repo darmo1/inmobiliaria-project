@@ -15,9 +15,10 @@ const FeatureServices = () => {
                                 <Image 
                                 src={img} 
                                 alt="service-feature" 
-                                width="150" 
-                                height="150" 
-                                className='rounded-full'
+                                width={200} 
+                                height={120} 
+                                className='h-48 rounded-full'
+                                loading="lazy"
                                 />
                             </div>
                             <h2 className="text-center font-semibold mt-4">{featureName}</h2>
