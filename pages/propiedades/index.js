@@ -2,7 +2,7 @@ import sanityClient from "@lib/sanity";
 import HousesSection from "components/HousesSection";
 import React from "react";
 
-const house = `*[_type == 'houses' && "Casas" in categories[]->title] | order(_createdAt asc) {
+const house = `*[_type == 'houses' && "Casas" in categories[]->title] | order(_createdAt desc) {
     _id,
     address,
     bathroom,
@@ -20,7 +20,7 @@ const house = `*[_type == 'houses' && "Casas" in categories[]->title] | order(_c
     piscina
   }`;
 
-const aptos = `*[_type == 'houses' && "Apartamentos" in categories[]->title] | order(_createdAt asc){
+const aptos = `*[_type == 'houses' && "Apartamentos" in categories[]->title] | order(_createdAt desc){
     _id,
     address,
     bathroom,
@@ -38,7 +38,7 @@ const aptos = `*[_type == 'houses' && "Apartamentos" in categories[]->title] | o
     piscina
   }`;
 
-const bodegas = `*[_type == 'houses' && "Bodegas" in categories[]->title] | order(_createdAt asc) {
+const bodegas = `*[_type == 'houses' && "Bodegas" in categories[]->title] | order(_createdAt desc) {
     _id,
     address,
     bathroom,
@@ -56,7 +56,7 @@ const bodegas = `*[_type == 'houses' && "Bodegas" in categories[]->title] | orde
     piscina
   }`;
 
-const terrenos = `*[_type == 'houses' && "Terrenos" in categories[]->title] | order(_createdAt asc){
+const terrenos = `*[_type == 'houses' && "Terrenos" in categories[]->title] | order(_createdAt desc){
     _id,
     address,
     bathroom,
@@ -74,7 +74,7 @@ const terrenos = `*[_type == 'houses' && "Terrenos" in categories[]->title] | or
     piscina
   }`;
 
-const otros = `*[_type == 'houses' && "otros" in categories[]->title] | order(_createdAt asc) {
+const otros = `*[_type == 'houses' && "otros" in categories[]->title] | order(_createdAt desc) {
     _id,
     address,
     bathroom,

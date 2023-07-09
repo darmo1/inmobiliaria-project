@@ -60,7 +60,7 @@ export default function Home({ data, dataEquipo, posts }) {
   );
 }
 
-const queryHouses = `*[_type == 'houses'] | order(_createdAt asc)[0..9]{
+const queryHouses = `*[_type == 'houses'] | order(_createdAt desc)[0..9]{
   _id,
   address,
   bathroom,
