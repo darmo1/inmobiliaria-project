@@ -20,7 +20,7 @@ const house = `*[_type == 'houses' && "Casas" in categories[]->title] {
     piscina
   }`;
 
-const aptos = `*[_type == 'houses'] && "Apartamentos" in categories[]->title {
+const aptos = `*[_type == 'houses' && "Apartamentos" in categories[]->title] {
     _id,
     address,
     bathroom,
@@ -38,7 +38,7 @@ const aptos = `*[_type == 'houses'] && "Apartamentos" in categories[]->title {
     piscina
   }`;
 
-const bodegas = `*[_type == 'houses'] && "Bodegas" in categories[]->title {
+const bodegas = `*[_type == 'houses' && "Bodegas" in categories[]->title] {
     _id,
     address,
     bathroom,
@@ -56,7 +56,7 @@ const bodegas = `*[_type == 'houses'] && "Bodegas" in categories[]->title {
     piscina
   }`;
 
-const terrenos = `*[_type == 'houses'] && "Terrenos" in categories[]->title {
+const terrenos = `*[_type == 'houses' && "Terrenos" in categories[]->title] {
     _id,
     address,
     bathroom,
@@ -74,7 +74,7 @@ const terrenos = `*[_type == 'houses'] && "Terrenos" in categories[]->title {
     piscina
   }`;
 
-const otros = `*[_type == 'houses'] && "otros" in categories[]->title {
+const otros = `*[_type == 'houses' && "otros" in categories[]->title] {
     _id,
     address,
     bathroom,
