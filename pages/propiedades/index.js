@@ -108,22 +108,27 @@ async function getCategoriesOtros() {
   const response = await sanityClient.fetch(otros);
   return response;
 }
+async function getCategoriesTerrenos() {
+  const response = await sanityClient.fetch(terrenos);
+  return response;
+}
 
 export async function getStaticProps(){
   const dataHouse = await getCategoriesHouse();
   const dataAptos = await getCategoriesAptos();
   const dataBodegas = await getCategoriesBoddegas();
   const dataOtros = await getCategoriesOtros();
+  const dataTerrenos = await getCategoriesTerrenos();
 
   return {
     props: {
-      data: {dataHouse, dataAptos, dataBodegas, dataOtros}
+      data: {dataHouse, dataAptos, dataBodegas, dataOtros, dataTerrenos}
     }
   }
 }
 
 export default function Propiedades({ data }) {
-   const {dataHouse, dataAptos, dataBodegas, dataOtros} = data
+   const {dataHouse, dataAptos, dataBodegas, dataOtros, dataTerrenos} = data
   
 
   return (
@@ -133,6 +138,7 @@ export default function Propiedades({ data }) {
       {(dataHouse && dataHouse.length > 0) &&  <HousesSection data={dataHouse} title="Casas"   description=''/> }
       {(dataAptos && dataAptos.length > 0) &&  <HousesSection data={dataAptos} title="Apartamentos"   description=''/>}
       {(dataBodegas && dataBodegas.length > 0) &&  <HousesSection data={dataBodegas} title="Bodegas"   description=''/>}
+      {(dataTerrenos && dataTerrenos.length > 0) &&  <HousesSection data={dataTerrenos} title="Terrenos"   description=''/>}
       {(dataOtros && dataOtros.length > 0) &&  <HousesSection data={dataOtros} title="otros"   description=''/>}
    
       </div>
