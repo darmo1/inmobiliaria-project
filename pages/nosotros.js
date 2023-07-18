@@ -60,7 +60,7 @@ function Nosotros() {
           horizontal en todo el territorio colombiano.
           <br />
           <br />
-          🧑‍💼 Contamos con un excelente equipo de profesionales y tecnológico
+          🧑‍💼 Contamos con un excelente equipo de profesionales y tecnologos
           para gestionar
           <ol className="ml-12 my-4">
             <li>✔️ El cuidado y mantenimiento de los edificios</li>
